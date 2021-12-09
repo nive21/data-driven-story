@@ -122,12 +122,14 @@ section{
     z-index: -1;
     position: fixed;
     display: block;
+    top: 50%;
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
 }
 .lottie-animation-1 {
-    width: 500px;
-    max-height: 50vh;
-    max-width: none;
-    right: 40px;
+    max-width: 45vw;
+    height: auto;
+    right: 5vw;
 }
 .lottie-animation-2 {
     overflow: hidden;
@@ -137,47 +139,39 @@ section{
 .lottie-animation-4 {
     left: auto;
     right: 7vw;
-    width: 35vw;
+    max-width: 45vw;
     height: 100vh;
 }
 .lottie-animation-5 {
     left: auto;
     right: 10vw;
-    width: 35vw;
+    max-width: 35vw;
     max-height: 100vh;
-    top: 7vh;
-    margin: 0;
-    padding: 0;
 }
 .lottie-animation-6 {
     left: auto;
     right: 10vw;
-    width: 35vw;
+    max-width: 35vw;
     max-height: 100vh;
-    top: 5vh;
 }
 .lottie-animation-7 {
     left: auto;
     right: 10vw;
-    width: 35vw;
+    max-width: 35vw;
     max-height: 100vh;
-    top: 5vh;
 }
 .lottie-animation-8 {
     left: auto;
     right: 5vw;
-    width: 40vw;
+    max-width: 40vw;
     max-height: 100vh;
-    top: 25vh;
 }
 .lottie-animation-9 {
     left: auto;
     right: 5vw;
-    width: 40vw;
+    max-width: 40vw;
     max-height: 100vh;
-    top: 25vh;
 }
-
 .lottie-parent{
   position: absolute;
 }
