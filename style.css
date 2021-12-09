@@ -208,13 +208,14 @@ p{
   margin-bottom: 5vh;
 }
 .tableauViz{
-  left: 10vw;
-  width: 50vw;
+  height: 1477px;
+  display: grid;
 }
 iframe{
   /* height: 100%; */
   padding-top: 5vh;
   padding-bottom: 5vh;
+  height: 1477px;
   width: 80vw;
   left: 10vw;
   position: absolute;
