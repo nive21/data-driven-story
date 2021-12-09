@@ -57,8 +57,13 @@ $(document).ready(function(){
        }
        var bullet_10 = {
          fade_in_start:17500,
-         fade_out_end: 22500,
+         fade_out_end: 21500,
          class_name: '._10'
+       }
+       var bullet_11 = {
+         fade_in_start:21500,
+         fade_out_end: 24500,
+         class_name: '._11'
        }
 
        function change(bullet){
@@ -146,6 +151,13 @@ $(document).ready(function(){
          change(bullet_10);
        } else {
          set_to_zero(bullet_10);
+       }
+
+       if (scroll_position >= bullet_11["fade_in_start"] && scroll_position <= bullet_11["fade_out_end"])
+       {
+         change(bullet_11);
+       } else {
+         set_to_zero(bullet_11);
        }
 
    })
