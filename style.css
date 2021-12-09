@@ -66,7 +66,7 @@ p{
 .hero-scroll-container{
   position: relative;
   left: 0px;
-  height: 21300px;
+  height: 23300px;
 }
 .sticky-container{
   position: -webkit-sticky;
@@ -196,8 +196,11 @@ p{
 .lottie-parent-4{
   height: 2000px;
 }
-.lottie-parent-5, .lottie-parent-6, .lottie-parent-7, .lottie-parent-8, .lottie-parent-9, .lottie-parent-10{
+.lottie-parent-5, .lottie-parent-6, .lottie-parent-7, .lottie-parent-8, .lottie-parent-9{
   height: 2000px;
+}
+.lottie.parent{
+  height: 6000px;
 }
 .explore{
   width: 100vw;

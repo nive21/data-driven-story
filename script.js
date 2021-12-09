@@ -57,7 +57,7 @@ $(document).ready(function(){
        }
        var bullet_10 = {
          fade_in_start:17500,
-         fade_out_end: 20500,
+         fade_out_end: 26500,
          class_name: '._10'
        }
 
