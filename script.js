@@ -55,6 +55,11 @@ $(document).ready(function(){
          fade_out_end: 17500,
          class_name: '._9'
        }
+       var bullet_10 = {
+         fade_in_start:17500,
+         fade_out_end: 20500,
+         class_name: '._10'
+       }
 
        function change(bullet){
          var fade_in_end = bullet["fade_in_start"] + fade_duration;
@@ -65,12 +70,12 @@ $(document).ready(function(){
          } else if (scroll_position >= fade_out_start && scroll_position <= bullet["fade_out_end"]){
            $(bullet["class_name"]).css("opacity", 1-(scroll_position - fade_out_start)/ fade_duration);
          }
-         console.log("change", bullet["class_name"], scroll_position, $(bullet["class_name"]).css("opacity"));
+         // console.log("change", bullet["class_name"], scroll_position, $(bullet["class_name"]).css("opacity"));
        }
 
        function set_to_zero(bullet){
          $(bullet["class_name"]).css("opacity", 0);
-         console.log("set to 0", bullet["class_name"], scroll_position);
+         // console.log("set to 0", bullet["class_name"], scroll_position);
        }
 
        if (scroll_position >= bullet_1["fade_in_start"] && scroll_position <= bullet_1["fade_out_end"])
@@ -136,6 +141,12 @@ $(document).ready(function(){
          set_to_zero(bullet_9);
        }
 
+       if (scroll_position >= bullet_10["fade_in_start"] && scroll_position <= bullet_10["fade_out_end"])
+       {
+         change(bullet_10);
+       } else {
+         set_to_zero(bullet_10);
+       }
 
    })
 })

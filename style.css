@@ -66,7 +66,7 @@ p{
 .hero-scroll-container{
   position: relative;
   left: 0px;
-  height: 18000px;
+  height: 21300px;
 }
 .sticky-container{
   position: -webkit-sticky;
@@ -176,6 +176,12 @@ p{
     max-width: 40vw;
     height: 100vh;
 }
+.lottie-animation-10 {
+    left: auto;
+    right: 2vw;
+    max-width: 48vw;
+    height: 100vh;
+}
 .lottie-parent{
   position: absolute;
 }
@@ -190,22 +196,24 @@ p{
 .lottie-parent-4{
   height: 2000px;
 }
-.lottie-parent-5, .lottie-parent-6, .lottie-parent-7, .lottie-parent-8, .lottie-parent-9{
+.lottie-parent-5, .lottie-parent-6, .lottie-parent-7, .lottie-parent-8, .lottie-parent-9, .lottie-parent-10{
   height: 2000px;
 }
 .explore{
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  margin-bottom: 5vh;
 }
 .tableauViz{
   left: 10vw;
   width: 50vw;
 }
-#dashboard{
-  width: 90vw;
-  height: 90vh;
+iframe{
+  /* height: 100%; */
   padding-top: 5vh;
-  left: 5vw;
+  padding-bottom: 5vh;
+  width: 80vw;
+  left: 10vw;
   position: absolute;
 }
 .footer{
