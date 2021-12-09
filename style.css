@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Manrope:wght@200;400;600&display=swap');
 
-body{
+html, body {
+  width: 100vw;
+  height: 100vh;
   margin: 0px;
   padding: 0px;
   font-family: 'Cormorant Garamond', serif;
   background-color: #000000;
-}
-html, body {
-  height: 100%
 }
 section{
   width: 100%;
@@ -58,7 +57,7 @@ section{
 .hero-scroll-container{
   position: relative;
   left: 0px;
-  height: 3100vh;
+  height: 18000px;
 }
 .sticky-container{
   position: -webkit-sticky;
@@ -192,13 +191,10 @@ section{
 .explore{
   width: 100vw;
   height: 100vh;
-  background-color: white;
 }
 .tableauViz{
   left: 10vw;
   width: 50vw;
-  background-color: #000000;
-  color: #000000;
 }
 #dashboard{
   width: 90vw;
@@ -215,13 +211,12 @@ section{
   background-color: black;
   display: flex;
   justify-content: center;
-  color: white;
   align-content: center;
   align-items: center;
   padding-left: 20vw;
   padding-right: 20vw;
 }
-.conclusion_text{
+.conclusion_text, ul{
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2em;
