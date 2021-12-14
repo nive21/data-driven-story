@@ -1,11 +1,23 @@
 $(document).ready(function(){
    $('.lottie').css("opacity", 0);
    $('.hero-bullet-points').css("opacity", 0);
+   $('iframe').css("opacity", 0);
+
+   var vh = $(window).height();
+   var vw = $(window).width();
+   var scale_ratio = vw/1600;
+
+   var fade_duration = 200;
+   var extra_height = 500;
+
+   $('.explore').css("-webkit-transform", 'scale('+ scale_ratio +')');
+   $('iframe').css("opacity", 1);
+   $('#tableauViz-1').css("margin-bottom", "-"+ (1-scale_ratio)*2300 +'px');
+   $('#tableauViz-2').css("margin-bottom", "-"+ (1-scale_ratio)*900 +'px');
 
    $(window).scroll(function(){
-       var vh = $(window).height();
+
        var scroll_position = $(window).scrollTop() - vh;
-       var fade_duration = 200;
 
        var bullet_1 = {
          fade_in_start: 0,
@@ -69,6 +81,7 @@ $(document).ready(function(){
        function change(bullet){
          var fade_in_end = bullet["fade_in_start"] + fade_duration;
          var fade_out_start = bullet["fade_out_end"] - fade_duration;
+         $(bullet["class_name"]).css("z-index", 2);
 
          if (scroll_position >= bullet["fade_in_start"] && scroll_position <= fade_out_start){
            $(bullet["class_name"]).css("opacity", (scroll_position- bullet["fade_in_start"])/ fade_duration);
@@ -80,6 +93,8 @@ $(document).ready(function(){
 
        function set_to_zero(bullet){
          $(bullet["class_name"]).css("opacity", 0);
+         $(bullet["class_name"]).css("z-index", -1);
+         $(".lottie").css("z-index", -1);
          // console.log("set to 0", bullet["class_name"], scroll_position);
        }
 
